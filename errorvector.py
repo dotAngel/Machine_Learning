@@ -1,13 +1,13 @@
-import values_xwyalpha as values
-import y_predictiva as yp
+from values_xwyalpha import y
+from y_predictiva import y_hat
 
 e = []
 
 # for i in range(3):
 #     e.append(values.y[i] - yp.y_hat[i])
 
-e.append(values.y[0] - yp.y_hat[0]) # fila 1
-e.append(values.y[1] - yp.y_hat[1]) # fila 2
-e.append(values.y[2] - yp.y_hat[2]) # fila 3
+e.append(y[0] - y_hat[0]) # fila 1
+e.append(y[1] - y_hat[1]) # fila 2
+e.append(y[2] - y_hat[2]) # fila 3
 
 #print("error e =", e)

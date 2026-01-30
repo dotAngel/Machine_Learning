@@ -10,3 +10,4 @@ y = [11, 18, 25]    # La experiencia actual de sus habilidades
 w = [1.0, 1.0]      # El nivel actual del Pokemon
 alpha = 0.01        # Que tan rapido aprendera segun su naturaleza
 
+w1 = [0,0]
