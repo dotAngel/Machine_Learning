@@ -22,7 +22,12 @@ print("Intercepto b =", b)
 
 # Predicción
 #nueva prediccion = (pendiente)(x_nueva) + bias; m = pendiente; b = bias
-altura_nueva = 1.65
-peso_predicho = m * altura_nueva + b
+altura_nueva = [1.65,1.67,1.69]
+peso_predicho = []
+# peso_predicho = m * altura_nueva + b
+for i in range(len(altura_nueva)):
+    peso_predicho.append(m*altura_nueva[i]+b)
+    
 
-print("Peso estimado para altura", altura_nueva, "=", peso_predicho, "kg")
+for i in range(len(peso_predicho)):
+    print("Peso estimado para altura", altura_nueva[i], "=", peso_predicho[i], "kg")
