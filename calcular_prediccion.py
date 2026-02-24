@@ -19,4 +19,5 @@ def showform(op):
         print("Valor de m =", m)
         print("Valor de b =", b)
     else:
-        print(f"Ecuacion de la recta: y = {m} X  {f"- {b}" if b < 0 else f"+ {b}"}")
+        sign = f'- {abs(b)}' if b < 0 else f'+ {b}'
+        print(f"Ecuacion de la recta: y = {m} X  {sign}")
